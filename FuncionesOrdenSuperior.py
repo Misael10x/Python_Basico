@@ -3,3 +3,7 @@ def hablarAlto(texto):
 
 def hablarBajo(texto):
     return texto.lower()
+
+def hola(fun):
+    texto = fun('Hola')
+    print(texto)
