@@ -7,3 +7,6 @@ def hablarBajo(texto):
 def hola(fun):
     texto = fun('Hola')
     print(texto)
+
+hola(hablarAlto)
+hola(hablarBajo)    
