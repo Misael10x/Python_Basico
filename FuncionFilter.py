@@ -8,3 +8,6 @@ amigos = [("Misael", 22),
 edad = lambda  dato: dato[1] >=18
 
 amigos_bebida = list(filter(edad, amigos))
+
+for i in amigos_bebida:
+    print(i)
