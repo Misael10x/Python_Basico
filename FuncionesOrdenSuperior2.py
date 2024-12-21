@@ -3,5 +3,5 @@ def divisor(x):
        return y / x
     return dividiendo
     
-    
 divide = divisor(2)
+print(divide(10))
