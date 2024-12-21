@@ -6,3 +6,5 @@ amigos = [("Misael", 22),
           ("Lupita", 16)]
 
 edad = lambda  dato: dato[1] >=18
+
+amigos_bebida = list(filter(edad, amigos))
