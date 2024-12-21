@@ -4,3 +4,5 @@ amigos = [("Misael", 22),
           ("Abigail", 21),
           ("Cristel", 21),
           ("Lupita", 16)]
+
+edad = lambda  dato: dato[1] >=18
