@@ -5,3 +5,7 @@ tienda = [("Camisa", 20.00),
 
 fun_euro = lambda datos: (datos[0], datos[1]*0.96)
 fun_dolar = lambda datos: (datos[0], datos[1]/0.96)
+
+tienda2 = list(map(fun_dolar, tienda))
+
+print(type(tienda2))
