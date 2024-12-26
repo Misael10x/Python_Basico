@@ -18,3 +18,9 @@ class Cubo(Rectangulo):
          
      def volumen(self):
         return self.alto * self.ancho * self.largo
+         
+cuadrado = Cuadrado (3, 3)
+cuadrado2 = Cuadrado (2, 6)
+cubo = Cubo (3, 3, 3)        
+#print(cuadrado.area())
+print(cubo.volumen())
