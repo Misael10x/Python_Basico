@@ -10,3 +10,11 @@ class Cuadrado(Rectangulo):
         
     def area(self):
         return self.alto * self.ancho
+        
+class Cubo(Rectangulo):
+     def __init__(self, alto, ancho, largo):
+         self.largo = largo
+         super().__init__(alto, ancho)
+         
+     def volumen(self):
+        return self.alto * self.ancho * self.largo
