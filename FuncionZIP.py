@@ -7,3 +7,6 @@ usuarios = list(zip(nombre_usuario, contrasena, fecha_inicio_sesion))
 
 #print(type(usuarios))
 #print(usuarios)
+
+for i in usuarios:
+      print(i) 
