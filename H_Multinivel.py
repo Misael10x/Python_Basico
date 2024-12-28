@@ -1,1 +1,2 @@
-
+class Organismo:
+    vivo = True
