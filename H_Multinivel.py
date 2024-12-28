@@ -8,3 +8,6 @@ class Animal(Organismo):
 class Perro(Animal):
         def ladrar(self):
             print('Este perro esta ladrando...')
+
+perro = Perro()
+perro.ladrar()
