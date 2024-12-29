@@ -14,3 +14,7 @@ class Alcon(Depredador):
 
 class Pez(Presa, Depredador):
     pass
+
+conejo = Conejo()
+halcon = Alcon()
+pez = Pez()
