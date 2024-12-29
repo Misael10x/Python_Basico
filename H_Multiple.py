@@ -18,3 +18,8 @@ class Pez(Presa, Depredador):
 conejo = Conejo()
 halcon = Alcon()
 pez = Pez()
+
+#conejo.huir()
+#alcon.cazar()
+pez.cazar()
+pez.huir()
