@@ -6,3 +6,11 @@ class Depredador:
     def cazar(self):
         print('Este animal esta cazando...')
         
+class Conejo(Presa):
+    pass
+
+class Alcon(Depredador):
+    pass
+
+class Pez(Presa, Depredador):
+    pass
