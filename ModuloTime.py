@@ -19,3 +19,7 @@ import time
 #cadena_tiempo = '18 November, 2024'
 #tiempo = time.strptime(cadena_tiempo, '%d %B, %Y')
 #print(tiempo)
+
+tiempo_tupla = (2024, 11, 18, 18, 58, 0, 0, 0, 0)
+cadena_tiempo = time.asctime(tiempo_tupla)
+print(cadena_tiempo)
