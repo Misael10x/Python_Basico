@@ -23,3 +23,8 @@ import time
 tiempo_tupla = (2024, 11, 18, 18, 58, 0, 0, 0, 0)
 cadena_tiempo = time.asctime(tiempo_tupla)
 print(cadena_tiempo)
+
+
+tiempo_tupla = (2024, 11, 18, 18, 58, 0, 0, 0, 0)
+cadena_tiempo = time.mktime(tiempo_tupla)
+print(cadena_tiempo)
