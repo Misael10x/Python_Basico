@@ -20,3 +20,8 @@ cambiar_color(coche1, 'rojo')
 cambiar_color(coche2, 'amarillo')
 cambiar_color(coche3, 'verde')
 cambiar_color(motocicleta, 'azul')
+
+print(coche1.color)
+print(coche2.color)
+print(coche3.color)
+print(motocicleta.color)
