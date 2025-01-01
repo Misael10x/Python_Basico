@@ -1,1 +1,2 @@
-
+class Coche:
+    color = None
