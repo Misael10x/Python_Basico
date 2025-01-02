@@ -7,3 +7,7 @@
 #    if comida == "salir":
 #        break
 #    comidas.append(comida)
+
+comidas = []
+while (comida := input('¿Que comida te gusta?   ')) != 'salir':
+    comidas.append(comida)
