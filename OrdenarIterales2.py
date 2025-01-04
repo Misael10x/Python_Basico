@@ -8,3 +8,6 @@ edad = lambda tupla:tupla[2]
 #estudiantes.sort(key=calificacion, reverse=True)
 
 estudiantes2 = sorted(estudiantes, key=edad)
+
+for i in estudiantes:
+    print(i) 
