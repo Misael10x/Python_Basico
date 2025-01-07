@@ -9,3 +9,8 @@ def tiempo():
         time.sleep(1)
         contador += 1
         print(contador, "Segundos")
+        
+        
+x = threading.Thread(target=tiempo, daemon=True)
+#x.setDaemon(False)
+x.start()
