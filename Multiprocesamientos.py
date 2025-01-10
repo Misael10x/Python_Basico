@@ -31,3 +31,24 @@ def main():
     f.start()
     g.start()
     h.start()
+    
+    
+    a.join()
+    b.join()
+    c.join()
+    d.join()
+    e.join()
+    f.join()
+    g.join()
+    h.join()
+    
+    fin = time.perf_counter()
+    tiempo = fin - iniciar
+    print("Finalizo", tiempo, "Segundos")
+    
+    print(cpu_count())
+
+
+
+if __name__ == '__main__':
+    main()
