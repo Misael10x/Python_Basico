@@ -22,3 +22,12 @@ def main():
     f = Process(target=contador, args=(125000000,))
     g = Process(target=contador, args=(125000000,))
     h = Process(target=contador, args=(125000000,))
+    
+    a.start()
+    b.start()
+    c.start()
+    d.start()
+    e.start()
+    f.start()
+    g.start()
+    h.start()
