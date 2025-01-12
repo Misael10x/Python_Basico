@@ -12,3 +12,5 @@ Label = Label(Window, text='Hola, Bienvenido Misael :)',
               pady=50)
 Label.pack(padx=150, pady=150)
 #Label.place(x=100, y=100)
+
+Window.mainloop()
