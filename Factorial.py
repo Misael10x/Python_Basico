@@ -9,3 +9,6 @@ def factorial(n):
 numero = int(input("Introduce un número para calcular su factorial: "))
 resultado = factorial(numero)
 if resultado is None:
+    print("El factorial no está definido para números negativos.")
+else:
+    print(f"El factorial de {numero} es: {resultado}")
