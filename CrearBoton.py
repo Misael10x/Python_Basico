@@ -21,3 +21,5 @@ boton = Button(windows, text='Haz click', command=click,
                pady=15,
                image=imagen,
                compound='top')
+boton.pack()
+
