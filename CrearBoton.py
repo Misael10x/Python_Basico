@@ -23,3 +23,6 @@ boton = Button(windows, text='Haz click', command=click,
                compound='top')
 boton.pack()
 
+
+
+windows.mainloop()
