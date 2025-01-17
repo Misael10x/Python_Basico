@@ -20,3 +20,7 @@ windows.geometry("400x100")
 
 entrada = Entry(windows, font=('Arial', 20), fg='red', bg='black', width=20)
 entrada.pack(pady=10)
+
+Button(windows, text='Enviar', command=enviar).pack(side=LEFT, padx=5)
+Button(windows, text='Reset', command=reset).pack(side=LEFT, padx=5)
+Button(windows, text='Delete', command=delete).pack(side=LEFT, padx=5)
