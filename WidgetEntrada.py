@@ -13,3 +13,10 @@ def delete():
     actual_texto = entrada.get()
     if actual_texto:
         entrada.delete(len(actual_texto) - 1, END)
+
+windows = Tk()
+windows.title("Gestión de Entrada")
+windows.geometry("400x100")
+
+entrada = Entry(windows, font=('Arial', 20), fg='red', bg='black', width=20)
+entrada.pack(pady=10)
