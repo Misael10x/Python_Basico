@@ -24,3 +24,5 @@ entrada.pack(pady=10)
 Button(windows, text='Enviar', command=enviar).pack(side=LEFT, padx=5)
 Button(windows, text='Reset', command=reset).pack(side=LEFT, padx=5)
 Button(windows, text='Delete', command=delete).pack(side=LEFT, padx=5)
+
+windows.mainloop()
