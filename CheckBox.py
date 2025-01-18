@@ -33,3 +33,6 @@ check_button = Checkbutton(windows,
                            image=python_photo,
                            compound='left')
                 
+check_button.pack()
+
+windows.mainloop()
