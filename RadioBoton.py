@@ -12,3 +12,10 @@ def orden():
         print('Haz ordenado un Hotdog')
     else:
         print('ERROR')
+
+def cargar_imagen(ruta, ancho, alto):
+    imagen = Image.open(ruta)
+    imagen = imagen.resize((ancho, alto), Image.Resampling.LANCZOS)
+    return ImageTk.PhotoImage(imagen)
+
+windows = Tk()
