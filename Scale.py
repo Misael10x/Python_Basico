@@ -23,3 +23,12 @@ scale = Scale(windows,
               bg='#111111')
 scale.set(((scale['from'] - scale['to']) / 2) + scale['to'])
 scale.pack()
+
+coldImage = PhotoImage(file='hielo.png').subsample(15, 15)
+coldLabel = Label(image=coldImage)
+coldLabel.pack()
+
+boton = Button(windows, text='Enviar', command=submit)
+boton.pack()
+
+windows.mainloop()
