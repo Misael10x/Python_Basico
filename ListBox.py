@@ -19,3 +19,13 @@ def delete():
     for index in  reversed(listbox.curselection()):
         listbox.delete(index)
     listbox.config(height=listbox.size())
+
+windows = Tk()
+
+listbox = Listbox(windows,
+                  bg='#f7ffde',
+                  font=('Arial', 35),
+                  width=20,
+                  selectmode=MULTIPLE)
+
+listbox.pack()
