@@ -29,3 +29,26 @@ listbox = Listbox(windows,
                   selectmode=MULTIPLE)
 
 listbox.pack()
+
+listbox.insert(1, "Pizza de queso")
+listbox.insert(2, "Pizza de hawaiana")
+listbox.insert(3, "Pizza de peperoni")
+listbox.insert(4, "Pizza de carnes frias")
+listbox.insert(5, "Pizza de champiñones")
+
+listbox.config(height=listbox.size())
+
+entrybox = Entry(windows)
+entrybox.pack()
+
+
+sumitButton = Button(windows, text="Enviar", command=submit)
+sumitButton.pack()
+
+addButton = Button(windows, text="Agregar", command=add)
+addButton.pack()
+
+deleteButton = Button(windows, text="Eliminar", command=delete)
+deleteButton.pack()
+
+windows.mainloop()
