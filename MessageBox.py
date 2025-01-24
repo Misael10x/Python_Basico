@@ -24,3 +24,8 @@ def click():
 
 
 windows = Tk()
+
+button = Button(windows, text='Click', command=click)
+button.pack()
+
+windows.mainloop()
