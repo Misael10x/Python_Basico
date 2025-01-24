@@ -20,3 +20,7 @@ def click():
       #var = (messagebox.askyesnocancel(title='Advertencia', message='Estas seguro de salir'))
       #print(var)
       
+        messagebox.askyesnocancel(title='Advertencia', message='Estas seguro de salir', icon='warning')
+
+
+windows = Tk()
