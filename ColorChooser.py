@@ -10,3 +10,5 @@ window = Tk()
 window.geometry('420x420')
 boton = Button(text='Hac click en mi', command=click) 
 boton.pack()
+
+window.mainloop()
