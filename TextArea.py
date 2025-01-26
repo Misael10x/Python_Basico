@@ -16,3 +16,8 @@ texto = Text(window,
              pady=20,
              fg='red')
 texto.pack()
+
+boton = Button(window, text='Enviar', command=Enviar)
+boton.pack()
+
+window.mainloop()
