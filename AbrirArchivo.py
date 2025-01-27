@@ -8,3 +8,10 @@ def Abrir():
     archivo = open(filepath, 'r')
     print(archivo.read())
     archivo.close()
+
+window = Tk()
+
+boton = Button(window, text='Abri', command=Abrir)
+boton.pack()
+
+window.mainloop()
