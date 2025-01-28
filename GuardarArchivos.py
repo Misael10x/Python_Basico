@@ -7,7 +7,7 @@ def Guardar():
     archivo = filedialog.asksaveasfile(initialdir='/home/misael/Documentos/Parte',
                                        defaultextension='.txt',
                                        filetypes=[
-                                           ('ARchivos de texto', '.txt'),
+                                           ('Archivos de texto', '.txt'),
                                            ('HTML', '.html'),
                                            ('Todos los acchivos','.*')
                                            ])
