@@ -11,3 +11,5 @@ def Guardar():
                                            ('HTML', '.html'),
                                            ('Todos los acchivos','.*')
                                            ])
+    if archivo is None:
+        return
