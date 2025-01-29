@@ -26,3 +26,12 @@ fileMenu.add_command(label='Abrir',command=abrir, image=openImage, compound='lef
 fileMenu.add_command(label='Guardar',command=guardar, image=saveImage, compound='left')
 fileMenu.add_separator()
 fileMenu.add_command(label='Salir',command=quit, image=exitImage,compound='left')
+
+editMenu = Menu(menubar,tearoff=0, font=('MV Boli', 25))
+menubar.add_cascade(label='Editar', menu=editMenu)
+editMenu.add_command(label='Cortar',command=cortar)
+editMenu.add_command(label='Copiar',command=copiar)
+editMenu.add_command(label='Pegar',command=pegar)
+
+
+window.mainloop()
