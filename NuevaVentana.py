@@ -6,3 +6,7 @@ def crear():
     window.destroy()
 
 window = Tk()
+
+Button(window,text='Crear nueva ventana', command=crear).pack()
+
+window.mainloop()
