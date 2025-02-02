@@ -12,3 +12,7 @@ apellidoEntry = Entry(window).grid(row=2,column=1)
 
 emailLabel = Label(window, text='Email: ',width=20,bg='green').grid(row=3,column=0)
 emailEntry = Entry(window).grid(row=3,column=1)
+
+boton = Button(window,text='Enviar',bg='yellow').grid(row=4,column=0,columnspan=2)
+
+window.mainloop()
