@@ -19,3 +19,13 @@ def start():
 window = Tk()
 porcentaje = StringVar()
 texto = StringVar()
+
+bar = Progressbar(window, orient=HORIZONTAL,length=300)
+bar.pack(pady=10)
+
+textoLabel = Label(window,textvariable=porcentaje).pack()
+comlabel = Label(window,textvariable=texto).pack()
+
+boton = Button(window,text='Descargar', command=start).pack()
+
+window.mainloop()
