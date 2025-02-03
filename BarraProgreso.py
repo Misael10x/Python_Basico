@@ -14,3 +14,8 @@ def start():
         porcentaje.set(str(int((dowload/GB))*100)+'%')
         texto.set(str(dowload)+'/'+str(GB)+ 'GB Completado')
         window.update_idletasks()
+
+
+window = Tk()
+porcentaje = StringVar()
+texto = StringVar()
