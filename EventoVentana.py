@@ -6,3 +6,10 @@ def hacer_algo(event):
 
 window = Tk()
 window.geometry('1050x200')
+
+window.bind('<Key>',hacer_algo)
+
+label = Label(window,font=('Helvetica',100))
+label.pack()
+
+window.mainloop()
