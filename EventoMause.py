@@ -10,3 +10,6 @@ window = Tk()
 #window.bind('<ButtonRelease>',hacer_algo)
 #window.bind('<Enter>',hacer_algo)
 #window.bind('<Leave>',hacer_algo)
+window.bind('<Motion>',hacer_algo)
+
+window.mainloop()
