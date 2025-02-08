@@ -11,3 +11,10 @@ ventana = tk.Tk()
 ventana.title("Juego de Dados")
 ventana.geometry("400x200")
 
+resultado_label = tk.Label(ventana, text="Resultado: -", font=("Arial", 24))
+resultado_label.pack(pady=20)
+
+boton_lanzar = tk.Button(ventana, text="Lanzar dados", command=lanzar_dados, font=("Arial", 16))
+boton_lanzar.pack(pady=10)
+
+ventana.mainloop()
