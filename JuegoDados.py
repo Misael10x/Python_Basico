@@ -6,3 +6,8 @@ def lanzar_dados():
     dado2 = random.randint(1, 6)
     suma = dado1 + dado2
     resultado_label.config(text=f"Resultado: {dado1} + {dado2} = {suma}")
+
+ventana = tk.Tk()
+ventana.title("Juego de Dados")
+ventana.geometry("400x200")
+
