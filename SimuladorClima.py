@@ -6,3 +6,7 @@ def actualizar_clima():
     clima = random.choice(climas)
     clima_label.config(text=f"Clima actual: {clima}")
 
+ventana = tk.Tk()
+ventana.title("Simulador de Clima")
+ventana.geometry("300x150")
+
