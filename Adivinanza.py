@@ -12,3 +12,8 @@ def verificar_intento():
         reiniciar_juego()
     except ValueError:
         messagebox.showerror("Error", "Por favor, ingresa un número válido.")
+
+def reiniciar_juego():
+    global numero_secreto
+    numero_secreto = random.randint(1, 10)
+    entrada.delete(0, tk.END)
