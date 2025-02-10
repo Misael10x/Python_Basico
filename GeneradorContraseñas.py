@@ -15,4 +15,6 @@ def generar_contraseña():
     except ValueError:
         messagebox.showerror("Error", "Por favor, ingresa un número válido.")
 
-
+ventana = tk.Tk()
+ventana.title("Generador de Contraseñas")
+ventana.geometry("400x200")
