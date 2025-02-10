@@ -18,3 +18,17 @@ def generar_contraseña():
 ventana = tk.Tk()
 ventana.title("Generador de Contraseñas")
 ventana.geometry("400x200")
+
+instrucciones = tk.Label(ventana, text="Longitud de la contraseña:", font=("Arial", 12))
+instrucciones.pack(pady=10)
+
+longitud_entry = tk.Entry(ventana, font=("Arial", 12))
+longitud_entry.pack(pady=10)
+
+boton_generar = tk.Button(ventana, text="Generar Contraseña", command=generar_contraseña, font=("Arial", 12))
+boton_generar.pack(pady=10)
+
+contraseña_label = tk.Label(ventana, text="Contraseña generada: -", font=("Arial", 12))
+contraseña_label.pack(pady=20)
+
+ventana.mainloop()
