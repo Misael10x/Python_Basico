@@ -12,3 +12,8 @@ ventana.geometry("400x200")
 
 resultado_label = tk.Label(ventana, text="Presiona 'Girar' para comenzar", font=("Arial", 18), bg="white")
 resultado_label.pack(expand=True, fill="both")
+
+boton_girar = tk.Button(ventana, text="Girar", command=girar_ruleta, font=("Arial", 16))
+boton_girar.pack(pady=10)
+
+ventana.mainloop()
