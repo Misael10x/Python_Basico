@@ -17,3 +17,8 @@ def animar_barras():
             ventana.update()
             ventana.after(10)  # Velocidad de la animación
     ventana.after(1000, animar_barras)  # Repetir la animación
+
+# Crear la ventana
+ventana = tk.Tk()
+ventana.title("Gráfico de Barras Animado")
+ventana.geometry("800x400")
