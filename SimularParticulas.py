@@ -20,3 +20,20 @@ class Particula:
         self.particula = canvas.create_oval(
             self.x, self.y, self.x + self.tamaño, self.y + self.tamaño, fill=self.color
         )
+
+    def mover(self):
+        self.x += self.dx
+        self.y += self.dy
+        # Rebotar en los bordes
+        if self.x <= 0 or self.x + self.tamaño >= ANCHO:
+            self.dx *= -1
+        if self.y <= 0 or self.y + self.tamaño >= ALTO:
+            self.dy *= -1
+        # Actualizar posición en el canvas
+        self.canvas.move(self.particula, self.dx, self.dy)
+
+# Función para animar las partículas
+def animar_particulas():
+    for particula in particulas:
+        particula.mover()
+    ventana.after(30, animar_particulas)  # Velocidad de la animación
