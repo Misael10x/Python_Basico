@@ -20,3 +20,21 @@ class Gota:
             self.y = random.randint(-ALTO, 0)
             self.x = random.randint(0, ANCHO)
         self.canvas.coords(self.gota, self.x, self.y, self.x, self.y + self.longitud)
+
+def animar_lluvia():
+    for gota in gotas:
+        gota.caer()
+    ventana.after(30, animar_lluvia)
+
+ventana = tk.Tk()
+ventana.title("Simulador de Lluvia")
+ventana.geometry(f"{ANCHO}x{ALTO}")
+
+canvas = tk.Canvas(ventana, width=ANCHO, height=ALTO, bg="black")
+canvas.pack()
+
+gotas = [Gota(canvas) for _ in range(NUM_GOTAS)]
+
+animar_lluvia()
+
+ventana.mainloop()
