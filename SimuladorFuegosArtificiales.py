@@ -41,3 +41,16 @@ def animar_particulas():
             particulas.remove(particula)
     ventana.after(30, animar_particulas)
 
+ventana = tk.Tk()
+ventana.title("Simulador de Fuegos Artificiales")
+ventana.geometry(f"{ANCHO}x{ALTO}")
+
+canvas = tk.Canvas(ventana, width=ANCHO, height=ALTO, bg="black")
+canvas.pack()
+
+particulas = []
+
+crear_fuego_artificial()
+animar_particulas()
+
+ventana.mainloop()
