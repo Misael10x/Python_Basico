@@ -33,3 +33,11 @@ def crear_fuego_artificial():
         particulas.append(Particula(canvas, x, y, color))
     ventana.after(random.randint(500, 1500), crear_fuego_artificial)
 
+def animar_particulas():
+    for particula in particulas[:]:
+        particula.mover()
+        if particula.tiempo_vida <= 0:
+            canvas.delete(particula.particula)
+            particulas.remove(particula)
+    ventana.after(30, animar_particulas)
+
