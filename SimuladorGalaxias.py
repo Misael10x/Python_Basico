@@ -21,3 +21,21 @@ class Estrella:
         x = ANCHO // 2 + self.distancia * math.cos(self.angulo)
         y = ALTO // 2 + self.distancia * math.sin(self.angulo)
         self.canvas.coords(self.estrella, x, y, x + self.tamaño, y + self.tamaño)
+
+def animar_galaxia():
+    for estrella in estrellas:
+        estrella.mover()
+    ventana.after(30, animar_galaxia)
+
+ventana = tk.Tk()
+ventana.title("Simulador de Galaxia en Espiral")
+ventana.geometry(f"{ANCHO}x{ALTO}")
+
+canvas = tk.Canvas(ventana, width=ANCHO, height=ALTO, bg="black")
+canvas.pack()
+
+estrellas = [Estrella(canvas) for _ in range(NUM_ESTRELLAS)]
+
+animar_galaxia()
+
+ventana.mainloop()
