@@ -14,3 +14,10 @@ class Estrella:
         self.distancia = random.uniform(0, ANCHO // 2)
         self.tamaño = random.uniform(1, 3)
         self.estrella = canvas.create_oval(0, 0, self.tamaño, self.tamaño, fill="white")
+
+    def mover(self):
+        self.angulo += VELOCIDAD
+        self.distancia += 0.1  # Expansión gradual de la espiral
+        x = ANCHO // 2 + self.distancia * math.cos(self.angulo)
+        y = ALTO // 2 + self.distancia * math.sin(self.angulo)
+        self.canvas.coords(self.estrella, x, y, x + self.tamaño, y + self.tamaño)
