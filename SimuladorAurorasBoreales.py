@@ -20,3 +20,26 @@ class Onda:
         self.color = generar_color_aurora()
         self.angulo = random.uniform(0, 2 * math.pi)
         self.onda = canvas.create_line(self.x, self.y, self.x, self.y, fill=self.color, width=2)
+
+    def mover(self):
+        self.angulo += VELOCIDAD
+        self.y = ALTO // 2 + AMPLITUD * math.sin(FRECUENCIA * self.x + self.angulo)
+        self.canvas.coords(self.onda, self.x, self.y, self.x + 1, self.y)
+
+def animar_auroras():
+    for onda in ondas:
+        onda.mover()
+    ventana.after(30, animar_auroras)
+
+ventana = tk.Tk()
+ventana.title("Simulador de Auroras Boreales")
+ventana.geometry(f"{ANCHO}x{ALTO}")
+
+canvas = tk.Canvas(ventana, width=ANCHO, height=ALTO, bg="black")
+canvas.pack()
+
+ondas = [Onda(canvas) for _ in range(NUM_ONDAS)]
+
+animar_auroras()
+
+ventana.mainloop()
