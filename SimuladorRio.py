@@ -22,3 +22,8 @@ class Ola:
         self.angulo += VELOCIDAD_OLAS
         self.y = ALTO // 2 + AMPLITUD_OLAS * math.sin(FRECUENCIA_OLAS * self.x + self.angulo)
         self.canvas.coords(self.ola, self.x, self.y, self.x + 1, self.y)
+
+def animar_rio():
+    for ola in olas:
+        ola.mover()
+    ventana.after(30, animar_rio)
