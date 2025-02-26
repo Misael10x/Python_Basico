@@ -2,7 +2,6 @@ import tkinter as tk
 import random
 import math
 
-# Configuración inicial
 ANCHO = 800
 ALTO = 600
 NUM_OLAS = 50
@@ -27,3 +26,23 @@ def animar_rio():
     for ola in olas:
         ola.mover()
     ventana.after(30, animar_rio)
+
+ventana = tk.Tk()
+ventana.title("Simulador de Río Animado")
+ventana.geometry(f"{ANCHO}x{ALTO}")
+
+canvas = tk.Canvas(ventana, width=ANCHO, height=ALTO, bg="lightblue")
+canvas.pack()
+
+# Dibujar el cielo
+canvas.create_rectangle(0, 0, ANCHO, ALTO // 2, fill="lightblue", outline="")
+
+# Dibujar el río
+canvas.create_rectangle(0, ALTO // 2, ANCHO, ALTO, fill="blue", outline="")
+
+# Crear las olas
+olas = [Ola(canvas, x, ALTO // 2) for x in range(0, ANCHO, 10)]
+
+animar_rio()
+
+ventana.mainloop()
