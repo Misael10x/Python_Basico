@@ -17,3 +17,8 @@ class Estrella:
         self.estrella = canvas.create_oval(
             self.x, self.y, self.x + self.tamaño, self.y + self.tamaño, fill="white"
         )
+
+    def parpadear(self):
+        self.brillo = random.uniform(0.1, 1.0)
+        color = f"#{int(255 * self.brillo):02x}{int(255 * self.brillo):02x}{int(255 * self.brillo):02x}"
+        self.canvas.itemconfig(self.estrella, fill=color)
