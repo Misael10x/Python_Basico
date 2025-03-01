@@ -13,3 +13,5 @@ class Arbol:
         self.x = x
         self.y = y
         self.tronco = canvas.create_rectangle(x - 10, y, x + 10, y + 100, fill="brown")
+        self.copa = canvas.create_oval(x - 50, y - 100, x + 50, y, fill="darkgreen")
+        self.luces = []
