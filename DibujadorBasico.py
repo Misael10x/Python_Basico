@@ -12,3 +12,13 @@ def dibujar(evento):
 ventana = tk.Tk()
 ventana.title("Dibujador Básico")
 ventana.geometry("800x600")
+
+canvas = tk.Canvas(ventana, width=800, height=600, bg="white")
+canvas.pack()
+
+x_previo, y_previo = 0, 0
+
+canvas.bind("<Button-1>", comenzar_dibujo)
+canvas.bind("<B1-Motion>", dibujar)
+
+ventana.mainloop()
