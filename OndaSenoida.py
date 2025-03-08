@@ -9,3 +9,7 @@ line, = ax.plot(x, np.sin(x))
 def update(frame):
     line.set_ydata(np.sin(x + frame / 10))
     return line,
+
+ani = animation.FuncAnimation(fig, update, frames=100, interval=50, blit=True)
+
+plt.show()
