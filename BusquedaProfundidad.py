@@ -14,3 +14,29 @@ def carve(x, y):
             maze[y + dy // 2][x + dx // 2] = ' '
             maze[ny][nx] = ' '
             carve(nx, ny)
+
+def solve(x, y, path=[]):
+    if (x, y) == (WIDTH - 2, HEIGHT - 2):
+        for px, py in path:
+            maze[py][px] = '.'
+        return True
+    for dx, dy in [(0, 1), (1, 0), (0, -1), (-1, 0)]:
+        nx, ny = x + dx, y + dy
+        if maze[ny][nx] == ' ':
+            maze[ny][nx] = '.'
+            if solve(nx, ny, path + [(nx, ny)]):
+                return True
+            maze[ny][nx] = ' '
+    return False
+
+maze[1][1] = ' '
+carve(1, 1)
+solve(1, 1)
+
+def display():
+    os.system("cls" if os.name == "nt" else "clear")
+    for row in maze:
+        print("".join(row))
+    time.sleep(0.05)
+
+display()
