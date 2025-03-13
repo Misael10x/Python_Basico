@@ -12,3 +12,9 @@ def resolver_sistema_complejo():
             real = float(input(f"Parte real de A[{i+1}][{j+1}]: "))
             imag = float(input(f"Parte imaginaria de A[{i+1}][{j+1}]: "))
             A[i, j] = complex(real, imag)
+
+    print("\nIntroduce los valores del vector B:")
+    for i in range(n):
+        real = float(input(f"Parte real de B[{i+1}]: "))
+        imag = float(input(f"Parte imaginaria de B[{i+1}]: "))
+        B[i] = complex(real, imag)
