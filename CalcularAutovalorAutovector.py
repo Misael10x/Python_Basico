@@ -17,3 +17,10 @@ def calcular_autovalores_autovectores():
     print("\nAutovalores de la matriz A:")
     for val in autovalores:
         print(val)
+
+    print("\nAutovectores de la matriz A:")
+    for vec in autovectores.T:
+        print(vec)
+
+if __name__ == "__main__":
+    calcular_autovalores_autovectores()
