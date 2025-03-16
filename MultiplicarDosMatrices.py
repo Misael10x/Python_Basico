@@ -21,3 +21,10 @@ def multiplicar_matrices_complejas():
             B[i, j] = complex(real, imag)
 
     C = np.dot(A, B)
+
+    print("\nResultado de la multiplicación de A por B:")
+    for fila in C:
+        print(fila)
+
+if __name__ == "__main__":
+    multiplicar_matrices_complejas()
