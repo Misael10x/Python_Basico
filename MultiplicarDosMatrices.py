@@ -12,3 +12,12 @@ def multiplicar_matrices_complejas():
             real = float(input(f"Parte real de A[{i+1}][{j+1}]: "))
             imag = float(input(f"Parte imaginaria de A[{i+1}][{j+1}]: "))
             A[i, j] = complex(real, imag)
+
+    print("\nIntroduce los elementos de la segunda matriz B:")
+    for i in range(n):
+        for j in range(n):
+            real = float(input(f"Parte real de B[{i+1}][{j+1}]: "))
+            imag = float(input(f"Parte imaginaria de B[{i+1}][{j+1}]: "))
+            B[i, j] = complex(real, imag)
+
+    C = np.dot(A, B)
