@@ -16,3 +16,9 @@ def inversa_matriz_compleja():
         A_inv = np.linalg.inv(A)
         print("\nMatriz inversa de A:")
         for fila in A_inv:
+            print(fila)
+    except np.linalg.LinAlgError:
+        print("\nLa matriz no tiene inversa (es singular).")
+
+if __name__ == "__main__":
+    inversa_matriz_compleja()
