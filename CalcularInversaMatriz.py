@@ -11,3 +11,8 @@ def inversa_matriz_compleja():
             real = float(input(f"Parte real de A[{i+1}][{j+1}]: "))
             imag = float(input(f"Parte imaginaria de A[{i+1}][{j+1}]: "))
             A[i, j] = complex(real, imag)
+
+    try:
+        A_inv = np.linalg.inv(A)
+        print("\nMatriz inversa de A:")
+        for fila in A_inv:
