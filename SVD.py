@@ -11,3 +11,9 @@ def svd_matriz_compleja():
             real = float(input(f"Parte real de A[{i+1}][{j+1}]: "))
             imag = float(input(f"Parte imaginaria de A[{i+1}][{j+1}]: "))
             A[i, j] = complex(real, imag)
+
+    U, S, Vh = np.linalg.svd(A)
+
+    print("\nMatriz U (vectores singulares izquierdos):")
+    for fila in U:
+        print(fila)
