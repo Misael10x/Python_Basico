@@ -17,3 +17,13 @@ def svd_matriz_compleja():
     print("\nMatriz U (vectores singulares izquierdos):")
     for fila in U:
         print(fila)
+
+    print("\nValores singulares:")
+    print(S)
+
+    print("\nMatriz Vh (vectores singulares derechos transpuestos):")
+    for fila in Vh:
+        print(fila)
+
+if __name__ == "__main__":
+    svd_matriz_compleja()
