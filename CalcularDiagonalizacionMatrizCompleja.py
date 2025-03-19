@@ -17,3 +17,18 @@ def diagonalizar_matriz_compleja():
     D = np.diag(valores)
     P = vectores
     P_inv = np.linalg.inv(P)
+
+    print("\nMatriz diagonal D:")
+    for fila in D:
+        print(fila)
+
+    print("\nMatriz de cambio de base P:")
+    for fila in P:
+        print(fila)
+
+    print("\nInversa de P:")
+    for fila in P_inv:
+        print(fila)
+
+if __name__ == "__main__":
+    diagonalizar_matriz_compleja()
