@@ -18,3 +18,14 @@ def resolver_sistema_complejo():
         real = float(input(f"Parte real de B[{i+1}]: "))
         imag = float(input(f"Parte imaginaria de B[{i+1}]: "))
         B[i] = complex(real, imag)
+
+    try:
+        X = np.linalg.solve(A, B)
+        print("\nSolución del sistema:")
+        for i, x in enumerate(X):
+            print(f"x{i+1} = {x}")
+    except np.linalg.LinAlgError:
+        print("\nEl sistema no tiene solución única (matriz singular).")
+
+if __name__ == "__main__":
+    resolver_sistema_complejo()
