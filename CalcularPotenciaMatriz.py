@@ -14,3 +14,7 @@ def potencia_matriz_compleja():
             A[i, j] = complex(real, imag)
 
     resultado = np.linalg.matrix_power(A, p)
+
+    print(f"\nMatriz A elevada a la potencia {p}:")
+    for fila in resultado:
+        print(fila)
