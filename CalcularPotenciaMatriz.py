@@ -18,3 +18,6 @@ def potencia_matriz_compleja():
     print(f"\nMatriz A elevada a la potencia {p}:")
     for fila in resultado:
         print(fila)
+
+if __name__ == "__main__":
+    potencia_matriz_compleja()
