@@ -11,4 +11,6 @@ def potencia_matriz_compleja():
         for j in range(n):
             real = float(input(f"Parte real de A[{i+1}][{j+1}]: "))
             imag = float(input(f"Parte imaginaria de A[{i+1}][{j+1}]: "))
-            A[i, j] = complex(real, imag
+            A[i, j] = complex(real, imag)
+
+    resultado = np.linalg.matrix_power(A, p)
