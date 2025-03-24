@@ -13,3 +13,6 @@ def simular_pendulo():
     l = float(input("Introduce la longitud del péndulo (m): "))
     theta0 = np.radians(float(input("Introduce el ángulo inicial (grados): ")))
     omega0 = 0
+
+    t_max = 10  
+    t_eval = np.linspace(0, t_max, 300)
