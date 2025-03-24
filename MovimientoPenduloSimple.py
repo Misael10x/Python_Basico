@@ -26,3 +26,6 @@ def simular_pendulo():
     plt.title("Movimiento de un péndulo simple")
     plt.grid()
     plt.show()
+
+if __name__ == "__main__":
+    simular_pendulo()
