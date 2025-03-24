@@ -18,3 +18,11 @@ def simular_pendulo():
     t_eval = np.linspace(0, t_max, 300)
 
     solucion = solve_ivp(pendulo, [0, t_max], [theta0, omega0], t_eval=t_eval, args=(g, l))
+
+    plt.figure()
+    plt.plot(t_eval, np.degrees(solucion.y[0]))
+    plt.xlabel("Tiempo (s)")
+    plt.ylabel("Ángulo (°)")
+    plt.title("Movimiento de un péndulo simple")
+    plt.grid()
+    plt.show()
