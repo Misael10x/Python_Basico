@@ -16,3 +16,5 @@ def simular_pendulo():
 
     t_max = 10  
     t_eval = np.linspace(0, t_max, 300)
+
+    solucion = solve_ivp(pendulo, [0, t_max], [theta0, omega0], t_eval=t_eval, args=(g, l))
