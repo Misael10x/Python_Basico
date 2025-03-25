@@ -17,3 +17,11 @@ class Planeta:
 
     def actualizar_trayectoria(self):
         self.trayectoria.append(self.posicion.copy())
+
+def calcular_fuerza(gravedad, planeta1, planeta2):
+    r = planeta2.posicion - planeta1.posicion
+    distancia = np.linalg.norm(r)
+    if distancia == 0:
+        return np.array([0, 0, 0])
+    fuerza = gravedad * planeta1.masa * planeta2.masa / distancia**3 * r
+    return fuerza
