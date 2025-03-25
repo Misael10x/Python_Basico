@@ -14,3 +14,6 @@ class Planeta:
         self.posicion = np.array(posicion, dtype=np.float64)
         self.velocidad = np.array(velocidad, dtype=np.float64)
         self.trayectoria = []
+
+    def actualizar_trayectoria(self):
+        self.trayectoria.append(self.posicion.copy())
