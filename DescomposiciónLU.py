@@ -6,3 +6,7 @@ def descomposicion_lu():
     A = np.random.randint(1, 10, (n, n))
     
     P, L, U = lu(A)
+
+    print("\nMatriz A:\n", A)
+    print("\nMatriz L:\n", L)
+    print("\nMatriz U:\n", U)
