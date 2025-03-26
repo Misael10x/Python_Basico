@@ -10,3 +10,6 @@ def descomposicion_lu():
     print("\nMatriz A:\n", A)
     print("\nMatriz L:\n", L)
     print("\nMatriz U:\n", U)
+
+if __name__ == "__main__":
+    descomposicion_lu()
