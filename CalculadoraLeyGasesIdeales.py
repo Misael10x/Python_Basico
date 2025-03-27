@@ -28,3 +28,6 @@ def calcular_gas_ideal():
         print(f"\nTemperatura: {T} Kelvin")
     else:
         print("\nOpción no válida.")
+
+if __name__ == "__main__":
+    calcular_gas_ideal()
