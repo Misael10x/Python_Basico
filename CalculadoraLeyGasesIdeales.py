@@ -20,3 +20,9 @@ def calcular_gas_ideal():
         T = float(input("Introduce la temperatura (Kelvin): "))
         n = (P * V) / (R * T)
         print(f"\nCantidad de gas: {n} moles")
+    elif opcion == "T":
+        n = float(input("Introduce la cantidad de gas (moles): "))
+        P = float(input("Introduce la presión (atm): "))
+        V = float(input("Introduce el volumen (litros): "))
+        T = (P * V) / (n * R)
+        print(f"\nTemperatura: {T} Kelvin")
