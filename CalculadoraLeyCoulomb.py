@@ -8,3 +8,9 @@ def ley_de_coulomb():
 
     if r == 0:
         print("\nLa distancia no puede ser cero.")
+    else:
+        F = k * (q1 * q2) / r**2
+        print(f"\nFuerza electrostática: {F} Newtons")
+
+if __name__ == "__main__":
+    ley_de_coulomb()
