@@ -15,3 +15,9 @@ def ley_de_ohm():
         V = float(input("Introduce el voltaje (V): "))
         I = float(input("Introduce la corriente (A): "))
         R = V / I
+        print(f"\nResistencia: {R} Ω")
+    else:
+        print("\nOpción no válida.")
+
+if __name__ == "__main__":
+    ley_de_ohm()
