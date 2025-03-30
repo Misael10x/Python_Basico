@@ -10,3 +10,4 @@ def ley_de_ohm():
         V = float(input("Introduce el voltaje (V): "))
         R = float(input("Introduce la resistencia (Ω): "))
         I = V / R
+        print(f"\nCorriente: {I} A")
