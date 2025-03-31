@@ -9,3 +9,6 @@ def velocidad_caida_libre():
     else:
         v = math.sqrt(2 * g * h)
         print(f"\nVelocidad final: {v:.2f} m/s")
+
+if __name__ == "__main__":
+    velocidad_caida_libre()
