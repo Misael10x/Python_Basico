@@ -6,3 +6,6 @@ def velocidad_caida_libre():
     
     if h < 0:
         print("\nLa altura no puede ser negativa.")
+    else:
+        v = math.sqrt(2 * g * h)
+        print(f"\nVelocidad final: {v:.2f} m/s")
