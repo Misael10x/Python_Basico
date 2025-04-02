@@ -5,3 +5,9 @@ def calcular_pH():
 
     if H_concentracion <= 0:
         print("\nLa concentración debe ser mayor que cero.")
+    else:
+        pH = -math.log10(H_concentracion)
+        print(f"\nEl pH de la solución es: {pH:.2f}")
+
+if __name__ == "__main__":
+    calcular_pH()
