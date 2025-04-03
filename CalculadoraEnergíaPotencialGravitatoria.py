@@ -1,1 +1,2 @@
 
+def energia_potencial():
