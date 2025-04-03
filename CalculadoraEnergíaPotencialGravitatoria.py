@@ -5,3 +5,6 @@ def energia_potencial():
 
     Ep = m * g * h
     print(f"\nEnergía Potencial Gravitatoria: {Ep:.2f} Joules")
+
+if __name__ == "__main__":
+    energia_potencial()
