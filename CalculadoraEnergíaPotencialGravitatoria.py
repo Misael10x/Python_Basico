@@ -4,3 +4,4 @@ def energia_potencial():
     g = 9.81  
 
     Ep = m * g * h
+    print(f"\nEnergía Potencial Gravitatoria: {Ep:.2f} Joules")
