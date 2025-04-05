@@ -5,3 +5,4 @@ def energia_foton():
     print(f"\nEnergía del fotón: {E:.3e} Joules")
 
 if __name__ == "__main__":
+    energia_foton()
