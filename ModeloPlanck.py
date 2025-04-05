@@ -3,3 +3,5 @@ def energia_foton():
     f = float(input("Introduce la frecuencia del fotón (Hz): "))
     E = h * f
     print(f"\nEnergía del fotón: {E:.3e} Joules")
+
+if __name__ == "__main__":
