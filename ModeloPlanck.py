@@ -1,1 +1,1 @@
-
+def energia_foton():
