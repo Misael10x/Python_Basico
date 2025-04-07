@@ -7,3 +7,6 @@ def analizar_ventas():
 
     print("\nResumen general:")
     print(df.describe())
+
+    print("\nVentas totales por categoría:")
+    print(df.groupby("Categoría")["Ventas"].sum())
