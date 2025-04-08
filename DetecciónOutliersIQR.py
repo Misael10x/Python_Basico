@@ -11,3 +11,11 @@ def detectar_outliers():
 
     limite_inferior = Q1 - 1.5 * IQR
     limite_superior = Q3 + 1.5 * IQR
+
+    outliers = df[(df[columna] < limite_inferior) | (df[columna] > limite_superior)]
+
+    print(f"\nOutliers en '{columna}':\n")
+    print(outliers)
+
+if __name__ == "__main__":
+    detectar_outliers()
