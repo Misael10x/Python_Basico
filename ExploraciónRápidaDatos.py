@@ -18,3 +18,4 @@ def resumen_datos():
     plt.show()
 
 if __name__ == "__main__":
+    resumen_datos()
