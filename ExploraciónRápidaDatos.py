@@ -8,3 +8,11 @@ def resumen_datos():
 
     print("\nResumen estadístico:")
     print(df.describe(include='all'))
+
+    print("\nValores nulos por columna:")
+    print(df.isnull().sum())
+
+    sns.pairplot(df.select_dtypes(include='number'))
+    plt.suptitle("Relaciones entre variables numéricas", y=1.02)
+    plt.tight_layout()
+    plt.show()
