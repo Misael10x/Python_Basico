@@ -16,3 +16,5 @@ def resumen_datos():
     plt.suptitle("Relaciones entre variables numéricas", y=1.02)
     plt.tight_layout()
     plt.show()
+
+if __name__ == "__main__":
