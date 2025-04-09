@@ -7,3 +7,4 @@ def resumen_datos():
     df = pd.read_csv(archivo)
 
     print("\nResumen estadístico:")
+    print(df.describe(include='all'))
