@@ -14,3 +14,7 @@ def analisis_sentimientos():
 
     df["Sentimiento"].value_counts().plot(kind="bar", color=["green", "red", "gray"])
     import matplotlib.pyplot as plt
+    plt.title("Análisis de Sentimientos")
+    plt.xlabel("Sentimiento")
+    plt.ylabel("Cantidad")
+    plt.tight_la
