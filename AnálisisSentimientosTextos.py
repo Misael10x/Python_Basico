@@ -17,4 +17,8 @@ def analisis_sentimientos():
     plt.title("Análisis de Sentimientos")
     plt.xlabel("Sentimiento")
     plt.ylabel("Cantidad")
-    plt.tight_la
+    plt.tight_layout()
+    plt.show()
+
+if __name__ == "__main__":
+    analisis_sentimientos()
