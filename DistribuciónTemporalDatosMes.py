@@ -17,3 +17,6 @@ def analisis_por_mes():
     plt.title("Registros por Mes")
     plt.xlabel("Mes")
     plt.ylabel("Cantidad")
+    plt.xticks(rotation=45)
+    plt.tight_layout()
+    plt.show()
