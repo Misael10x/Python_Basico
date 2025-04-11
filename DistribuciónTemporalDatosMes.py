@@ -5,3 +5,6 @@ def analisis_por_mes():
     archivo = input("Archivo CSV: ")
     columna_fecha = input("Nombre de la columna con fechas (YYYY-MM-DD): ")
     df = pd.read_csv(archivo)
+
+    df[columna_fecha] = pd.to_datetime(df[columna_fecha], errors='coerce')
+    df["Mes"] = df[columna_fecha].dt.to_period("M")
