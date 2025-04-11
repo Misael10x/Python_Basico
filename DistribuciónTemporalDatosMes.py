@@ -12,3 +12,8 @@ def analisis_por_mes():
     conteo_mensual = df["Mes"].value_counts().sort_index()
     print("\nCantidad de registros por mes:")
     print(conteo_mensual)
+
+    conteo_mensual.plot(kind="bar", color="orange")
+    plt.title("Registros por Mes")
+    plt.xlabel("Mes")
+    plt.ylabel("Cantidad")
