@@ -8,3 +8,7 @@ def analisis_por_mes():
 
     df[columna_fecha] = pd.to_datetime(df[columna_fecha], errors='coerce')
     df["Mes"] = df[columna_fecha].dt.to_period("M")
+    
+    conteo_mensual = df["Mes"].value_counts().sort_index()
+    print("\nCantidad de registros por mes:")
+    print(conteo_mensual)
