@@ -15,3 +15,6 @@ def estadisticas_basicas():
         print(f"Varianza: {datos_numericos[columna].var()}")
         print(f"Mínimo: {datos_numericos[columna].min()}")
         print(f"Máximo: {datos_numericos[columna].max()}")
+
+if __name__ == "__main__":
+    estadisticas_basicas()
