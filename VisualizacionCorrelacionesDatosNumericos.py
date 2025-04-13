@@ -16,3 +16,6 @@ def mapa_correlacion():
     plt.title("Mapa de Correlación")
     plt.tight_layout()
     plt.show()
+
+if __name__ == "__main__":
+    mapa_correlacion()
