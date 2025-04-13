@@ -11,3 +11,8 @@ def mapa_correlacion():
 
     print("\nMatriz de correlación:")
     print(correlaciones)
+
+    sns.heatmap(correlaciones, annot=True, cmap="coolwarm", fmt=".2f")
+    plt.title("Mapa de Correlación")
+    plt.tight_layout()
+    plt.show()
