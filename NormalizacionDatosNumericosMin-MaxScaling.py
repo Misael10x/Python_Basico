@@ -9,3 +9,9 @@ def normalizar_datos():
     scaler = MinMaxScaler()
     datos_normalizados = scaler.fit_transform(numericas)
     df_normalizado = pd.DataFrame(datos_normalizados, columns=numericas.columns)
+
+    print("\nDatos normalizados entre 0 y 1:")
+    print(df_normalizado.head())
+
+if __name__ == "__main__":
+    normalizar_datos()
