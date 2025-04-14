@@ -8,3 +8,4 @@ def normalizar_datos():
     
     scaler = MinMaxScaler()
     datos_normalizados = scaler.fit_transform(numericas)
+    df_normalizado = pd.DataFrame(datos_normalizados, columns=numericas.columns)
