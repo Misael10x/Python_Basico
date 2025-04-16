@@ -9,3 +9,6 @@ def regresion_lineal():
     df = pd.read_csv(archivo)
     X = df[[columna_x]]
     y = df[columna_y]
+
+    modelo = LinearRegression()
+    modelo.fit(X, y)
