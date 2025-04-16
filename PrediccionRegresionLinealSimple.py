@@ -15,3 +15,12 @@ def regresion_lineal():
 
     pendiente = modelo.coef_[0]
     interseccion = modelo.intercept_
+
+    print(f"\nEcuación: y = {pendiente:.4f}x + {interseccion:.4f}")
+
+    x_nuevo = float(input("Valor de X para predecir Y: "))
+    y_predicho = modelo.predict([[x_nuevo]])
+    print(f"Predicción: Y = {y_predicho[0]:.4f}")
+
+if __name__ == "__main__":
+    regresion_lineal()
