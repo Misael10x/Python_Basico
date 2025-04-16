@@ -5,3 +5,7 @@ def regresion_lineal():
     archivo = input("Archivo CSV: ")
     columna_x = input("Columna X: ")
     columna_y = input("Columna Y: ")
+
+    df = pd.read_csv(archivo)
+    X = df[[columna_x]]
+    y = df[columna_y]
