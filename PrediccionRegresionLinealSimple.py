@@ -12,3 +12,6 @@ def regresion_lineal():
 
     modelo = LinearRegression()
     modelo.fit(X, y)
+
+    pendiente = modelo.coef_[0]
+    interseccion = modelo.intercept_
