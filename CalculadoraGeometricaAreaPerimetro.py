@@ -16,3 +16,24 @@ def figuras_geometricas():
         s = (a + b + c) / 2
         area = math.sqrt(s * (s - a) * (s - b) * (s - c))
         perimetro = a + b + c
+
+    elif figura == "cuadrado":
+        lado = float(input("Lado: "))
+        area = lado ** 2
+        perimetro = 4 * lado
+
+    elif figura == "rectángulo":
+        base = float(input("Base: "))
+        altura = float(input("Altura: "))
+        area = base * altura
+        perimetro = 2 * (base + altura)
+
+    else:
+        print("Figura no válida.")
+        return
+
+    print(f"\nÁrea: {area:.2f}")
+    print(f"Perímetro: {perimetro:.2f}")
+
+if __name__ == "__main__":
+    figuras_geometricas()
