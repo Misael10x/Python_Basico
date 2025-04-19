@@ -6,3 +6,7 @@ def dibujar_figura():
     t = turtle.Turtle()
 
     if figura == "cuadrado":
+        lado = int(input("Lado: "))
+        for _ in range(4):
+            t.forward(lado)
+            t.right(90)
