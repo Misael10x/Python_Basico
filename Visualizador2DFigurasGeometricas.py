@@ -15,3 +15,7 @@ def dibujar_figuras():
     # Triángulo
     triangulo = plt.Polygon([[4, 0.5], [4.5, 1.5], [5, 0.5]], closed=True, edgecolor='red', fill=False)
     ax.add_patch(triangulo)
+
+    # Rectángulo
+    rectangulo = plt.Rectangle((6, 0.5), 1.5, 1, edgecolor='purple', fill=False)
+    ax.add_patch(rectangulo)
