@@ -11,3 +11,7 @@ def dibujar_figuras():
     # Cuadrado
     cuadrado = plt.Rectangle((2, 0.5), 1, 1, edgecolor='green', fill=False)
     ax.add_patch(cuadrado)
+
+    # Triángulo
+    triangulo = plt.Polygon([[4, 0.5], [4.5, 1.5], [5, 0.5]], closed=True, edgecolor='red', fill=False)
+    ax.add_patch(triangulo)
