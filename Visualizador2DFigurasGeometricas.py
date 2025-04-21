@@ -7,3 +7,7 @@ def dibujar_figuras():
     # Círculo
     circulo = plt.Circle((1, 1), 0.5, color='blue', fill=False)
     ax.add_patch(circulo)
+
+    # Cuadrado
+    cuadrado = plt.Rectangle((2, 0.5), 1, 1, edgecolor='green', fill=False)
+    ax.add_patch(cuadrado)
