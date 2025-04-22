@@ -10,3 +10,9 @@ def cargar_usuarios():
 def guardar_usuarios(usuarios):
     with open("usuarios.json", "w") as f:
         json.dump(usuarios, f)
+
+def registrar():
+    usuarios = cargar_usuarios()
+    usuario = input("Nuevo usuario: ")
+    if usuario in usuarios:
+        print("El usuario ya existe.")
