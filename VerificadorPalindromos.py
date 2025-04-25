@@ -6,3 +6,8 @@ def main():
     entrada = input("Ingresa una palabra o frase: ")
     if es_palindromo(entrada):
         print("¡Es un palíndromo!")
+    else:
+        print("No es un palíndromo.")
+
+if __name__ == "__main__":
+    main()
