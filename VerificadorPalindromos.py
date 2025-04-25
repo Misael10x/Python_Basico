@@ -3,3 +3,4 @@ def es_palindromo(texto):
     return texto == texto[::-1]
 
 def main():
+    entrada = input("Ingresa una palabra o frase: ")
