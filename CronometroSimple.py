@@ -9,3 +9,6 @@ def cronometro(segundos):
 def main():
     tiempo = int(input("Ingresa el tiempo en segundos: "))
     cronometro(tiempo)
+
+if __name__ == "__main__":
+    main()
