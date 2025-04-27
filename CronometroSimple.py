@@ -5,3 +5,7 @@ def cronometro(segundos):
         print(f"Tiempo restante: {i} segundos", end="\r", flush=True)
         time.sleep(1)
     print("\n¡Tiempo terminado!")
+
+def main():
+    tiempo = int(input("Ingresa el tiempo en segundos: "))
+    cronometro(tiempo)
