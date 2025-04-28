@@ -10,3 +10,6 @@ def main():
     cantidad = int(input("¿Cuántos nombres quieres generar? "))
     for _ in range(cantidad):
         print(generar_nombre())
+
+if __name__ == "__main__":
+    main()
