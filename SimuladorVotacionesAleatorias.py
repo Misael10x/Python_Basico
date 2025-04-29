@@ -1,3 +1,2 @@
-from random import choice
-
-def simulador_votacion():
+    opciones = ["Opción A", "Opción B", "Opción C"]
+    votos = {opcion: 0 for opcion in opciones}
