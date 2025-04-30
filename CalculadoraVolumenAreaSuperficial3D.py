@@ -14,3 +14,16 @@ def main():
     print("Calculadora de Volumen y Área Superficial")
     print("1. Esfera\n2. Cubo\n3. Cilindro")
     opcion = input("Selecciona una figura (1/2/3): ")
+    if opcion == "1":
+        r = float(input("Radio de la esfera: "))
+        v, a = esfera(r)
+    elif opcion == "2":
+        lado = float(input("Lado del cubo: "))
+        v, a = cubo(lado)
+    elif opcion == "3":
+        r = float(input("Radio del cilindro: "))
+        h = float(input("Altura del cilindro: "))
+        v, a = cilindro(r, h)
+    else:
+        print("Opción inválida")
+        return
