@@ -10,3 +10,7 @@ def cilindro(r, h):
     volumen = math.pi * r**2 * h
     area = 2 * math.pi * r * (r + h)
     return volumen, area
+def main():
+    print("Calculadora de Volumen y Área Superficial")
+    print("1. Esfera\n2. Cubo\n3. Cilindro")
+    opcion = input("Selecciona una figura (1/2/3): ")
