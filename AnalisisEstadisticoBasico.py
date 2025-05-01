@@ -7,3 +7,6 @@ def analisis(lista):
     minimo = min(lista)
     maximo = max(lista)
     return media, mediana, desviacion, minimo, maximo
+def main():
+    entrada = input("Introduce números separados por comas: ")
+    datos = [float(n) for n in entrada.split(",")]
