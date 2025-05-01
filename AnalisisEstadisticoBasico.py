@@ -10,3 +10,4 @@ def analisis(lista):
 def main():
     entrada = input("Introduce números separados por comas: ")
     datos = [float(n) for n in entrada.split(",")]
+    media, mediana, desv, mini, maxi = analisis(datos)
