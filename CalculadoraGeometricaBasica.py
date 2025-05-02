@@ -12,3 +12,7 @@ def triangulo(base, altura, lado1, lado2, lado3):
     area = (base * altura) / 2
     perimetro = lado1 + lado2 + lado3
     return area, perimetro
+def triangulo(base, altura, lado1, lado2, lado3):
+    area = (base * altura) / 2
+    perimetro = lado1 + lado2 + lado3
+    return area, perimetro
