@@ -16,3 +16,6 @@ def triangulo(base, altura, lado1, lado2, lado3):
     area = (base * altura) / 2
     perimetro = lado1 + lado2 + lado3
     return area, perimetro
+def main():
+    print("1. Círculo\n2. Cuadrado\n3. Triángulo")
+    opcion = input("Elige una figura (1-3): ")
