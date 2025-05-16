@@ -5,3 +5,7 @@ if num <= 1:
 else:
     for i in range(2, int(num**0.5) + 1):
         if num % i == 0:
+            print("No es primo")
+            break
+    else:
+        print("Es primo")
