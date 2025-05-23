@@ -8,3 +8,13 @@ def es_primo(n):
 
 def generar_primos(hasta):
     primos = []
+    for num in range(2, hasta + 1):
+        if es_primo(num):
+            primos.append(num)
+    return primos
+
+limite = int(input("Generar primos hasta: "))
+lista_primos = generar_primos(limite)
+
+print("Números primos encontrados:")
+print(lista_primos)
