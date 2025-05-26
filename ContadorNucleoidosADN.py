@@ -7,3 +7,9 @@ def contar_nucleotidos(secuencia):
         "G": secuencia.count("G")
     }
     return conteo
+
+adn = input("Introduce la secuencia de ADN: ")
+resultado = contar_nucleotidos(adn)
+
+for base, cantidad in resultado.items():
+    print(f"{base}: {cantidad}")
