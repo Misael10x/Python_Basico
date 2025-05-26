@@ -4,3 +4,6 @@ def contar_nucleotidos(secuencia):
         "A": secuencia.count("A"),
         "T": secuencia.count("T"),
         "C": secuencia.count("C"),
+        "G": secuencia.count("G")
+    }
+    return conteo
