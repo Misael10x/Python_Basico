@@ -7,3 +7,4 @@ simbolos = ['#', '*', '+', '=', '-', '~', '^', '@', '%', '&']
 
 for _ in range(alto):
     linea = ''.join(random.choice(simbolos) for _ in range(ancho))
+    print(linea)
