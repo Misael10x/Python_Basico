@@ -4,3 +4,4 @@ def convertir_hora(hora_24):
     minutos = partes[1]
     
     if horas == 0:
+        return f"12:{minutos} AM"
