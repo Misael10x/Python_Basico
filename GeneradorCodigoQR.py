@@ -6,4 +6,4 @@ nombre_archivo = "codigo_qr.png"
 qr = qrcode.make(texto)
 qr.save(nombre_archivo)
 
-print(f"Código QR gua
+print(f"Código QR guardado como {nombre_archivo}")
