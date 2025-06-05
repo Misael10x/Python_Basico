@@ -5,4 +5,5 @@ La inteligencia artificial está transformando el mundo. Muchas industrias se be
 de la automatización, el análisis de datos y la predicción de comportamientos.
 """
 
-palabras = texto.lower().split(
+palabras = texto.lower().split()
+conteo = Counter(palabras)
