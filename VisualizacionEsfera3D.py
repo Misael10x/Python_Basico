@@ -10,3 +10,8 @@ v = np.linspace(0, np.pi, 100)
 x = 5 * np.outer(np.cos(u), np.sin(v))
 y = 5 * np.outer(np.sin(u), np.sin(v))
 z = 5 * np.outer(np.ones(np.size(u)), np.cos(v))
+
+ax.plot_surface(x, y, z, color='cyan', edgecolor='k')
+
+ax.set_title("Esfera 3D")
+plt.show()
