@@ -1,1 +1,1 @@
-Generador de Tono Senoidal en WAV
+import numpy as np
