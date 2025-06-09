@@ -3,3 +3,5 @@ def convertir_longitud(valor, unidad_origen, unidad_destino):
         "m": 1,
         "cm": 100,
         "mm": 1000,
+        "km": 0.001
+    }
