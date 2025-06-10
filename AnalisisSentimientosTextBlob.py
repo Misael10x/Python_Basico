@@ -7,3 +7,6 @@ polaridad = analisis.sentiment.polarity
 if polaridad > 0:
     print("Sentimiento positivo 🌞")
 elif polaridad < 0:
+    print("Sentimiento negativo ☁️")
+else:
+    print("Sentimiento neutro 🌫️")
