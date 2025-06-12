@@ -9,3 +9,8 @@ def analizar_sentimiento(frase):
     elif sentimiento < 0:
         print("Sentimiento negativo 😠")
     else:
+        print("Sentimiento neutro 😐")
+    print("Valor de polaridad:", round(sentimiento, 2))
+
+texto = input("Escribe una frase: ")
+analizar_sentimiento(texto)
