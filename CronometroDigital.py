@@ -1,1 +1,1 @@
-Cronómetro Digital 
+import time
