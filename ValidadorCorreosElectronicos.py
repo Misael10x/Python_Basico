@@ -8,3 +8,5 @@ email = input("Introduce tu correo electrónico: ")
 
 if validar_correo(email):
     print("Correo válido ✅")
+else:
+    print("Correo inválido ❌")
