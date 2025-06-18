@@ -5,3 +5,4 @@ def es_palindromo(texto):
 entrada = input("Ingresa una palabra o frase: ")
 
 if es_palindromo(entrada):
+    print("¡Es un palíndromo! 🔁")
