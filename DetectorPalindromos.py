@@ -6,3 +6,5 @@ entrada = input("Ingresa una palabra o frase: ")
 
 if es_palindromo(entrada):
     print("¡Es un palíndromo! 🔁")
+else:
+    print("No es un palíndromo. ❌")
