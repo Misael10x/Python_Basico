@@ -5,3 +5,4 @@ import random
 valores = []
 
 fig, ax = plt.subplots()
+linea, = ax.plot([], [], lw=2)
